@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: reactive-programming
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/reactive_programming
+    username: umut
+    password: umut
+  flyway:
+    url: jdbc:postgresql://localhost:5432/reactive_programming
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+    enabled: true
